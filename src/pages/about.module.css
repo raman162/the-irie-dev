@@ -1,0 +1,25 @@
+.aboutcontainer{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.img{
+  margin: 1rem;
+  width: 300px;
+  float: left;
+}
+
+@media(max-width: 500px) {
+  .img{
+    float: none;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+  }
+}
+.text{
+  float: 'none';
+  padding: 1rem;
+}

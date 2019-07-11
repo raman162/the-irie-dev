@@ -2,35 +2,28 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-import PostListing from "../components/post-listing"
 
-const IndexPage = ({ data }) => (
+export default ({ data }) => (
   <Layout>
-    <SEO/>
-    <h1>Blog Posts</h1>
     {data.allMarkdownRemark.edges.map(({node}) => (
-      <PostListing key={node.id} post={node}/>
+      <div key={node.id}>
+        <h2>{node.frontmatter.title}</h2>
+        <div dangerouslySetInnerHTML={{__html: node.html}}/>
+      </div>
     ))}
   </Layout>
 )
-
-export default IndexPage
 
 export const query = graphql`
   query {
     allMarkdownRemark(
       sort: {fields:  frontmatter___date, order: DESC},
-      filter: {frontmatter: {published: {eq: true}}}
+      filter: {frontmatter: {published: {eq: false}}}
     ) {
       edges {
         node {
           id
-          excerpt
-          timeToRead
-          fields {
-            slug
-          }
+          html
           frontmatter {
             title
             description

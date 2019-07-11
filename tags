@@ -1,0 +1,129 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/d080788/
+.aboutcontainer	src/pages/about.module.css	/^.aboutcontainer{$/;"	c
+.container	src/components/header.module.css	/^.container{$/;"	c
+.container	src/components/post-listing.module.css	/^.container{$/;"	c
+.excerpt	src/components/post-listing.module.css	/^.excerpt{$/;"	c
+.gatsby-highlight	src/styles/prismjs.css	/^.gatsby-highlight {$/;"	c
+.gatsby-highlight pre[class*="language-"]	src/styles/prismjs.css	/^.gatsby-highlight pre[class*="language-"] {$/;"	s
+.gatsby-highlight pre[class*="language-"] .line-numbers	src/styles/prismjs.css	/^.gatsby-highlight pre[class*="language-"].line-numbers {$/;"	c
+.gatsby-highlight-code-line	src/styles/prismjs.css	/^.gatsby-highlight-code-line {$/;"	c
+.img	src/pages/about.module.css	/^.img{$/;"	c
+.logo	src/components/header.module.css	/^.logo{$/;"	c
+.text	src/pages/about.module.css	/^.text{$/;"	c
+.title	src/components/post-listing.module.css	/^.title{$/;"	c
+0	package.json	/^    "gatsby"$/;"	s	array:keywords
+<leader>ct	.vimrc	/^noremap <leader>ct :CompileTags<cr>$/;"	m
+Built	src/components/layout.js	/^          © {new Date().getFullYear()}, Built with$/;"	C
+CompileTags	.vimrc	/^command! CompileTags call CompileTags()$/;"	c
+CompileTags	.vimrc	/^function! CompileTags()$/;"	f
+Conclusion	src/posts/postgres-constraints-and-how-to-test-them.md	/^## Conclusion$/;"	s
+Create Unique Constraint	src/posts/postgres-constraints-and-how-to-test-them.md	/^### Create Unique Constraint$/;"	S
+Failed test 7: "do not allow two bookings for the same room on the same date"	src/posts/postgres-constraints-and-how-to-test-them.md	/^# Failed test 7: "do not allow two bookings for the same room on the same date"$/;"	c
+Further Reading	src/posts/postgres-constraints-and-how-to-test-them.md	/^## Further Reading$/;"	s
+Header	src/components/header.js	/^const Header = ({ siteTitle }) => ($/;"	C
+How to test your constraints	src/posts/postgres-constraints-and-how-to-test-them.md	/^## How to test your constraints$/;"	s
+Image	src/components/image.js	/^const Image = () => {$/;"	C
+IndexPage	src/pages/index.js	/^const IndexPage = ({ data }) => ($/;"	C
+Initialize Database	src/posts/postgres-constraints-and-how-to-test-them.md	/^### Initialize Database$/;"	S
+Initialize Docker-Compose Project	src/posts/postgres-constraints-and-how-to-test-them.md	/^### Initialize Docker-Compose Project$/;"	S
+Layout	src/components/layout.js	/^const Layout = ({ children }) => {$/;"	C
+Looks like you failed 1 test of 8	src/posts/postgres-constraints-and-how-to-test-them.md	/^# Looks like you failed 1 test of 8$/;"	c
+NotFoundPage	src/pages/404.js	/^const NotFoundPage = () => ($/;"	C
+OUTPUT	src/posts/postgres-constraints-and-how-to-test-them.md	/^## OUTPUT$/;"	s
+Rerun pgTAP Tests	src/posts/postgres-constraints-and-how-to-test-them.md	/^### Rerun pgTAP Tests$/;"	S
+SEO	src/components/seo.js	/^function SEO({ description, lang, meta, title }) {$/;"	f
+Test Summary Report	src/posts/postgres-constraints-and-how-to-test-them.md	/^Test Summary Report$/;"	s
+Why you should test your constraints	src/posts/postgres-constraints-and-how-to-test-them.md	/^## Why you should test your constraints$/;"	s
+Why you should use constraints	src/posts/postgres-constraints-and-how-to-test-them.md	/^## Why you should use constraints$/;"	s
+Write pgTAP Tests	src/posts/postgres-constraints-and-how-to-test-them.md	/^### Write pgTAP Tests$/;"	S
+a	src/styles/global.css	/^a{$/;"	s
+a:hover	src/styles/global.css	/^a:hover{$/;"	s
+author	gatsby-config.js	/^    author: `Raman Walwyn-Venguopal`,$/;"	p	class:module.exports.siteMetadata
+author	package.json	/^  "author": "Kyle Mathews <mathews.kyle@gmail.com>",$/;"	s
+bugs	package.json	/^  "bugs": {$/;"	o
+build	package.json	/^    "build": "gatsby build",$/;"	s	object:scripts
+children	src/components/layout.js	/^  children: PropTypes.node.isRequired,$/;"	p	class:Layout.propTypes
+contactEmail	gatsby-config.js	/^    contactEmail: `raman.walwyn@gmail.com`$/;"	p	class:module.exports.siteMetadata
+data	src/components/image.js	/^  const data = useStaticQuery(graphql`$/;"	C
+data	src/components/layout.js	/^  const data = useStaticQuery(graphql`$/;"	C
+defaultProps	src/components/header.js	/^Header.defaultProps = {$/;"	c	class:Header
+defaultProps	src/components/seo.js	/^SEO.defaultProps = {$/;"	c	class:SEO
+dependencies	package.json	/^  "dependencies": {$/;"	o
+description	gatsby-config.js	/^    description: noWhiteSpace`The Irie Dev is a general blog about software$/;"	p	class:module.exports.siteMetadata
+description	package.json	/^  "description": "A simple starter to get up and developing quickly with Gatsby",$/;"	s
+description	src/components/seo.js	/^  description: PropTypes.string,$/;"	p	class:SEO.propTypes
+description	src/components/seo.js	/^  description: ``,$/;"	p	class:SEO.defaultProps
+devDependencies	package.json	/^  "devDependencies": {$/;"	o
+develop	package.json	/^    "develop": "gatsby develop",$/;"	s	object:scripts
+exports	gatsby-config.js	/^module.exports = {$/;"	c	class:module
+format	package.json	/^    "format": "prettier --write src\/**\/*.{js,jsx}",$/;"	s	object:scripts
+gatsby	package.json	/^    "gatsby": "^2.13.6",$/;"	s	object:dependencies
+gatsby-image	package.json	/^    "gatsby-image": "^2.2.4",$/;"	s	object:dependencies
+gatsby-plugin-manifest	package.json	/^    "gatsby-plugin-manifest": "^2.2.1",$/;"	s	object:dependencies
+gatsby-plugin-offline	package.json	/^    "gatsby-plugin-offline": "^2.2.1",$/;"	s	object:dependencies
+gatsby-plugin-react-helmet	package.json	/^    "gatsby-plugin-react-helmet": "^3.1.0",$/;"	s	object:dependencies
+gatsby-plugin-sharp	package.json	/^    "gatsby-plugin-sharp": "^2.2.3",$/;"	s	object:dependencies
+gatsby-plugin-typography	package.json	/^    "gatsby-plugin-typography": "^2.3.0",$/;"	s	object:dependencies
+gatsby-remark-autolink-headers	package.json	/^    "gatsby-remark-autolink-headers": "^2.1.0",$/;"	s	object:dependencies
+gatsby-remark-prismjs	package.json	/^    "gatsby-remark-prismjs": "^3.3.1",$/;"	s	object:dependencies
+gatsby-source-filesystem	package.json	/^    "gatsby-source-filesystem": "^2.1.2",$/;"	s	object:dependencies
+gatsby-transformer-remark	package.json	/^    "gatsby-transformer-remark": "^2.6.1",$/;"	s	object:dependencies
+gatsby-transformer-sharp	package.json	/^    "gatsby-transformer-sharp": "^2.2.1",$/;"	s	object:dependencies
+keywords	package.json	/^  "keywords": [$/;"	a
+lang	src/components/seo.js	/^  lang: PropTypes.string,$/;"	p	class:SEO.propTypes
+lang	src/components/seo.js	/^  lang: `en`,$/;"	p	class:SEO.defaultProps
+license	package.json	/^  "license": "MIT",$/;"	s
+meta	src/components/seo.js	/^  meta: PropTypes.arrayOf(PropTypes.object),$/;"	p	class:SEO.propTypes
+meta	src/components/seo.js	/^  meta: [],$/;"	p	class:SEO.defaultProps
+name	package.json	/^  "name": "gatsby-starter-default",$/;"	s
+no exception thrown	src/posts/postgres-constraints-and-how-to-test-them.md	/^#     no exception thrown$/;"	c
+noWhiteSpace	gatsby-config.js	/^function noWhiteSpace(strings, ...placeholders) {$/;"	f
+path	gatsby-node.js	/^const path = require('path')$/;"	C
+plugins	gatsby-config.js	/^  plugins: [$/;"	p	class:module.exports
+post	src/templates/blog-post.js	/^  const post = data.markdownRemark$/;"	C
+prettier	package.json	/^    "prettier": "^1.18.2"$/;"	s	object:devDependencies
+prismjs	package.json	/^    "prismjs": "^1.16.0",$/;"	s	object:dependencies
+private	package.json	/^  "private": true,$/;"	b
+prop-types	package.json	/^    "prop-types": "^15.7.2",$/;"	s	object:dependencies
+propTypes	src/components/header.js	/^Header.propTypes = {$/;"	c	class:Header
+propTypes	src/components/layout.js	/^Layout.propTypes = {$/;"	c	class:Layout
+propTypes	src/components/seo.js	/^SEO.propTypes = {$/;"	c	class:SEO
+published: true	src/posts/postgres-constraints-and-how-to-test-them.md	/^published: true$/;"	s
+published: true	src/posts/test-draft.md	/^published: true$/;"	s
+query	src/pages/about.js	/^export const query = graphql`$/;"	C
+query	src/pages/drafts.js	/^export const query = graphql`$/;"	C
+query	src/pages/index.js	/^export const query = graphql`$/;"	C
+query	src/templates/blog-post.js	/^export const query = graphql`$/;"	C
+react	package.json	/^    "react": "^16.8.6",$/;"	s	object:dependencies
+react-dom	package.json	/^    "react-dom": "^16.8.6",$/;"	s	object:dependencies
+react-helmet	package.json	/^    "react-helmet": "^5.2.1",$/;"	s	object:dependencies
+react-typography	package.json	/^    "react-typography": "^0.16.19",$/;"	s	object:dependencies
+repository	package.json	/^  "repository": {$/;"	o
+scripts	package.json	/^  "scripts": {$/;"	o
+serve	package.json	/^    "serve": "gatsby serve",$/;"	s	object:scripts
+siteMetadata	gatsby-config.js	/^  siteMetadata: {$/;"	c	class:module.exports
+siteTitle	src/components/header.js	/^  siteTitle: PropTypes.string,$/;"	p	class:Header.propTypes
+siteTitle	src/components/header.js	/^  siteTitle: ``,$/;"	p	class:Header.defaultProps
+slug	gatsby-node.js	/^    const slug = createFilePath({$/;"	C
+start	package.json	/^    "start": "npm run develop",$/;"	s	object:scripts
+test	package.json	/^    "test": "echo \\"Write tests! -> https:\/\/gatsby.dev\/unit-testing\\""$/;"	s	object:scripts
+test_pgtap_constraints/	src/posts/postgres-constraints-and-how-to-test-them.md	/^# test_pgtap_constraints\/$/;"	c
+title	gatsby-config.js	/^    title: `The Irie Dev`,$/;"	p	class:module.exports.siteMetadata
+title	src/components/seo.js	/^  title: PropTypes.string.isRequired,$/;"	p	class:SEO.propTypes
+type	package.json	/^    "type": "git",$/;"	s	object:repository
+typography	package.json	/^    "typography": "^0.16.19",$/;"	s	object:dependencies
+typography	src/utils/typography.js	/^const typography = new Typography(fairyGatesTheme)$/;"	C
+typography-theme-fairy-gates	package.json	/^    "typography-theme-fairy-gates": "^0.16.19"$/;"	s	object:dependencies
+url	package.json	/^    "url": "https:\/\/github.com\/gatsbyjs\/gatsby-starter-default"$/;"	s	object:repository
+url	package.json	/^    "url": "https:\/\/github.com\/gatsbyjs\/gatsby\/issues"$/;"	s	object:bugs
+version	package.json	/^  "version": "0.1.0",$/;"	s
+🎓 Learning Gatsby	README.md	/^## 🎓 Learning Gatsby$/;"	s
+💫 Deploy	README.md	/^## 💫 Deploy$/;"	s
+🚀 Quick start	README.md	/^## 🚀 Quick start$/;"	s
+🧐 What's inside?	README.md	/^## 🧐 What's inside?$/;"	s

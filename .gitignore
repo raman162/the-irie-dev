@@ -50,6 +50,8 @@ typings/
 
 # Output of 'npm pack'
 *.tgz
+*.sw*
+*.un~
 
 # dotenv environment variables file
 .env

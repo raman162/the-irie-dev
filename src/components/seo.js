@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, keywords }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            keywords
           }
         }
       }
@@ -26,6 +27,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const metaKeywords = keywords || site.siteMetadata.keywords
 
   return (
     <Helmet
@@ -34,6 +36,7 @@ function SEO({ description, lang, meta, title }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      defaultTitle={site.siteMetadata.title}
       meta={[
         {
           name: `description`,
@@ -56,10 +59,6 @@ function SEO({ description, lang, meta, title }) {
           content: `summary`,
         },
         {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
           name: `twitter:title`,
           content: title,
         },
@@ -67,6 +66,14 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: 'keywords',
+          content: metaKeywords.join(" ")
+        },
+        {
+          name: 'viewport',
+          content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0'
+        }
       ].concat(meta)}
     />
   )

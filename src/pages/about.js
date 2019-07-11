@@ -17,7 +17,8 @@ export default ({ data }) => (
       <p className={styles.text}>
         Hi! Thanks for visiting{' '}
         <strong>{data.site.siteMetadata.title}</strong>. My name is
-        Raman and I'm originally from the beautiful country{' '}
+        Raman Walwyn-Venugopal and I'm originally from the beautiful
+        country{' '}
         <a href='https://visitantiguabarbuda.com/'>
           Antigua & Barbuda
         </a>. I'm currently a fullstack software developer in the city of

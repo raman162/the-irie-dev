@@ -1,5 +1,5 @@
 ---
-title: Postgres Constraints And How To Test Them
+title: Testing Postgres Constraints with pgTAP
 date: 2019-07-09
 description: Quick how to article on why and when you should use constraints in
              postgresql and how to to test them using pgTAP
@@ -31,7 +31,7 @@ Now that you understand why we need constraints, why should we test them?
 Because that's what developers do! We write unit tests if we want confidence in
 our code, therefore we should write tests if we want confidence in our schema.
 As our constraints become more complex, it becomes even more important to write
-tests for the behavior. This can be done with `<insert-favourite-language>`,
+tests for their behavior. This can be done with `<insert-favourite-language>`,
 however that process is more involved and is likely to be slower than pgTAP.
 
 ## How to test your constraints

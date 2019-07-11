@@ -24,16 +24,15 @@ constraints you can set up guardrails to protect that data. Constraints assist
 with ensuring the state of your data never invalidates your business logic.
 Imagine you're developing booking software for a hotel and a requirement is to
 not allow a room to be double booked on the same day. You can use constraints
-to ensure such data can never be stored.
+to ensure such conflicts will not arise.
 
 ## Why you should test your constraints
 Now that you understand why we need constraints, why should we test them?
 Because that's what developers do! We write unit tests if we want confidence in
-our code, therefore we should write tests if we want confidence in the
-integrity of our data. As our constraints become more complex, it becomes even
-more important to write tests for the behavior. This can be done with
-`<insert-favourite-language>`, however that process is more involved and is
-likely to be slower than pgTAP.
+our code, therefore we should write tests if we want confidence in our schema.
+As our constraints become more complex, it becomes even more important to write
+tests for the behavior. This can be done with `<insert-favourite-language>`,
+however that process is more involved and is likely to be slower than pgTAP.
 
 ## How to test your constraints
 
@@ -163,7 +162,7 @@ ROLLBACK;
 ```
 Let's review what we just wrote.
 
-The whole test plan is wrapped in a transaction so any changes made are
+The whole test plan is wrapped in a transaction so all of the inserts are
 rollbacked after the test plan finishes.
 
 [`SELECT plan(8)`](https://pgtap.org/documentation.html#usingpgtap) tells pgTAP

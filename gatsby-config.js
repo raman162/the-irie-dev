@@ -6,6 +6,7 @@ function noWhiteSpace(strings, ...placeholders) {
 
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://theirie.dev`,
     title: `The Irie Dev`,
     description: noWhiteSpace`The Irie Dev is a general blog about software
       development and random interesting things that I come accross in life`,
@@ -18,6 +19,13 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [`/drafts`],
+        createLinkInHead: true
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

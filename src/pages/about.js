@@ -18,7 +18,7 @@ export default ({ data }) => (
         Hi! Thanks for visiting{' '}
         <strong>{data.site.siteMetadata.title}</strong>. My name is
         Raman and I'm originally from the beautiful country{' '}
-        <a href='https://en.wikipedia.org/wiki/Antigua_and_Barbuda'>
+        <a href='https://visitantiguabarbuda.com/'>
           Antigua & Barbuda
         </a>. I'm currently a fullstack software developer in the city of
         Chicago.  When I'm not writing code I enjoy cycling, seeing new places

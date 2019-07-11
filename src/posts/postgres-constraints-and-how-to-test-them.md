@@ -9,11 +9,11 @@ published: true
 ---
 
 Modern day applications need to persist their state with a database. If you
-haven't jumped on the [nosql database](https://en.wikipedia.org/wiki/NoSQL)
+haven't jumped on the [nosql database](https://searchdatamanagement.techtarget.com/definition/NoSQL-Not-Only-SQL)
 train, you probably utilize a [relational
-database](https://en.wikipedia.org/wiki/Relational_database) such as
-[Postgresql](https://www.postgresql.org/). Today we will be taking a look at
-the importance of [database
+database](https://searchdatamanagement.techtarget.com/definition/relational-database)
+such as [Postgresql](https://www.postgresql.org/). Today we will be taking a
+look at the importance of [database
 constraints](https://www.postgresql.org/docs/current/ddl-constraints.html) and
 how to test them using [pgTAP](https://pgtap.org/).
 

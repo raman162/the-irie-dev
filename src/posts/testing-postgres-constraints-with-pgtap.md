@@ -68,7 +68,6 @@ services:
       - PGPASSWORD=supersecret
     volumes:
       - ./pg-data:/var/lib/postgresql/data
-      - ./seeds:/seeds
   pgtap:
     image: hbpmip/pgtap:1.0.0-2
     environment:
@@ -168,21 +167,17 @@ rollbacked after the test plan finishes.
 [`SELECT plan(8)`](https://pgtap.org/documentation.html#usingpgtap) tells pgTAP
 that we're going to run 8 tests. It's how all pgTAP test files begin.
 
-[`SELECT
-has_table('bookings')`](https://pgtap.org/documentation.html#has_table) ensures
+[`SELECT has_table('bookings')`](https://pgtap.org/documentation.html#has_table) ensures
 that our schema has a `bookings` table.
 
-[`SELECT col_not_null('bookings',
-'id')`](https://pgtap.org/documentation.html#col_not_null) ensures that our
+[`SELECT col_not_null('bookings', 'id')`](https://pgtap.org/documentation.html#col_not_null) ensures that our
 `bookings` table has an `id` column that does not allow `NULL` values.
 
-[`SELECT
-lives_ok('insert_310_july_4_booking')`](https://pgtap.org/documentation.html#lives_ok)
-ensures that the [prepared statement]()  we wrote executes without raising any
-error.
+[`SELECT lives_ok('insert_310_july_4_booking')`](https://pgtap.org/documentation.html#lives_ok)
+ensures that the [prepared statement](https://www.postgresql.org/docs/11/sql-prepare.html)  we wrote
+executes without raising any error.
 
-[`SELECT
-throws_ilike('insert_conflict_booking')`](https://pgtap.org/documentation.html#throws_like)
+[`SELECT throws_ilike('insert_conflict_booking')`](https://pgtap.org/documentation.html#throws_like)
 ensures that an error is thrown, when we execute our prepared statement. In
 this case we want postgres to throw a duplicate data error because of the
 conflict booking. This test case should fail since we have not created our
@@ -217,6 +212,9 @@ Test Summary Report
   Result: FAIL
 ```
 
+The pgTAP output shows us that our double booking test is not passing.  Let's
+add a unique constraint to get our test to pass.
+
 
 ### Create Unique Constraint
 
@@ -231,9 +229,9 @@ Add unique index
 CREATE UNIQUE INDEX bookings_room_date_uq ON public.bookings (date, room_number);
 ```
 
-Our constraint is actually a [unique index]() that ensures that a there cannot
-be two booking records with the same date and room number. If this happens,
-postgres will throw the unique validation error
+Our constraint is actually a [unique index](https://www.postgresql.org/docs/11/indexes-unique.html) that ensures
+there cannot be two booking records with the same date and room number. If this
+happens, postgres will throw the unique validation error
 
 
 ### Rerun pgTAP Tests
@@ -267,4 +265,3 @@ constraints with pgTAP.
 ## Further Reading
 * [pgTAP Docs](https://pgtap.org/documentation.html)
 * [Unit Testing functions in PostgreSQL](https://medium.com/engineering-on-the-incline/unit-testing-functions-in-postgresql-with-pgtap-in-5-simple-steps-beef933d02d3)
-
